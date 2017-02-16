@@ -11,6 +11,7 @@ public class RBIHTMLRptB extends RBITextRpt {
 	}
 
 	public void generateReport(ArrayList <DataPair> data){
+		//changed to HTML format
 		try{
 			FileWriter output = new FileWriter(m_reportFile);
 			BufferedWriter bufferedWriter =

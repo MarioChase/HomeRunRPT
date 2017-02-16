@@ -13,6 +13,7 @@ public class RBIHTMLRptA extends HomeRunHTMLRpt {
 	}
 
 	public ArrayList<DataPair> loadData() throws FileNotFoundException, IOException{
+		//similar grabs third element in array 
 		ArrayList<DataPair> data = new ArrayList<DataPair>();
 		File dataFile = new File("./" + m_dataFile);
 		try (BufferedReader reader = new BufferedReader(new FileReader(dataFile))) {

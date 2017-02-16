@@ -12,9 +12,11 @@ public class RBITextRpt extends HomeRunTextRpt {
 	}
 	
 	public ArrayList<DataPair> loadData() throws FileNotFoundException, IOException {
+		
 		ArrayList<DataPair> data = new ArrayList<DataPair>();
 		File dataFile = new File("./" + m_dataFile);
 		try (BufferedReader reader = new BufferedReader(new FileReader(dataFile))) {
+			//grabs the third element int the array
 			while (reader.ready()) {
 				String[] a = reader.readLine().split(",", -1);
 				if (a[2].isEmpty()) 
